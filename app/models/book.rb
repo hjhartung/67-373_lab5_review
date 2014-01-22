@@ -1,5 +1,5 @@
 class Book < ActiveRecord::Base
-  attr_accessible :publisher_id, :title, :year_published
+  attr_accessible :publisher_id, :title, :year_published, :author_ids
 
   belongs_to :publisher
   has_many :book_authors

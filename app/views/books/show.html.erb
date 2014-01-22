@@ -6,14 +6,16 @@
 </p>
 
 <p>
-  <b>Year published:</b>
+  <b>Year:</b>
   <%= @book.year_published %>
 </p>
 
 <p>
   <b>Publisher:</b>
-  <%= @book.publisher_id %>
+  <%= @book.publisher.name %>
 </p>
+
+<%= render :partial => 'list_of_authors' %>
 
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
